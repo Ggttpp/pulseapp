@@ -31,7 +31,7 @@ window.onload = function() {
 		   var jsonValue = JSON.parse(valueJson);
 		   
 		   console.log(valueJson);
-		   var sensor = jsonValue.sensor;
+		   var sensor = jsonValue.Data1;
 		   console.log(sensor);
 		   //databaseFirebase.innerText = sensor;
 		   if(sensor > 180) 
