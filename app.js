@@ -16,8 +16,9 @@ window.onload = function() {
 		projectId: "pulseapp-cbeca",
 		storageBucket: "",
 		messagingSenderId: "587921804051",
-		appId: "1:587921804051:web:011c36ae7acc8a8b"
+		appId: "1:587921804051:web:fe7b395a157edf63"
 	  };
+	
 
 	firebase.initializeApp(config);
 	
