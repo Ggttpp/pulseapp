@@ -25,14 +25,14 @@ window.onload = function() {
 	var notification = document.getElementById('notif');
 	var databaseRef = firebase.database().ref().child("sensor").child("bpm");
 	databaseRef.on( 'value', snap=> {
-		 //databaseFirebase.innerText = JSON.stringify( snap.val(), null, 3 );
+		 databaseFirebase.innerText = JSON.stringify( snap.val(), null, 3 );
 		 var valueJson = JSON.stringify( snap.val(), null, 3 );
 		 var jsonValue = JSON.parse(valueJson);
 		 
 		//  console.log(valueJson);
 		 var sensor = jsonValue.sensor;
 		 console.log(sensor);
-		 //databaseFirebase.innerText = sensor;
+		 databaseFirebase.innerText = sensor;
 		 if(sensor > 180) 
 		 {
 			 notification.innerText = "Danger";
