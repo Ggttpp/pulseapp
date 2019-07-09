@@ -24,7 +24,7 @@ window.onload = function() {
 	
 	  var databaseFirebase = document.getElementById('range');
 	  var notification = document.getElementById('notif');
-	  var databaseRef = firebase.database().ref().child("user").child("mahdan");
+	  var databaseRef = firebase.database().ref().child("sensor").child("bpm");
 	  databaseRef.on( 'value', snap=> {
 		   //databaseFirebase.innerText = JSON.stringify( snap.val(), null, 3 );
 		   var valueJson = JSON.stringify( snap.val(), null, 3 );
