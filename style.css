@@ -1,0 +1,46 @@
+#number {
+     font-size: 40px;
+     line-height: 80px;
+     padding: 20px;
+     color: black;
+     background: white;
+     box-sizing: border-box;
+     border-radius: 50%;
+     box-shadow: 0 0 0 4px black, inset 0 0 0 4px black;
+     border: 60px solid white;
+     text-align: center;
+     width: 240px;
+     height: 240px;
+     margin: 30px auto;
+}
+ #first-half, #second-half {
+     margin: auto;
+     width: 240px;
+     height: 240px;
+     box-sizing: border-box;
+     background: transparent;
+     border-radius: 50%;
+     transform: rotate(-45deg);
+}
+ #first-half {
+     border: 60px outset blue;
+     margin-top: -270px;
+}
+ #second-half {
+     border: 60px inset blue;
+     margin-top: -240px;
+}
+ #range {
+     width: 240px;
+     margin: 60px auto;
+     display: block;
+}
+ #jumpList {
+     width: 240px;
+     margin: auto;
+     text-align: center;
+}
+ #jumpList button {
+     margin: 0 10px;
+     padding: 10px;
+}
