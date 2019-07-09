@@ -29,7 +29,7 @@ window.onload = function() {
 		 var valueJson = JSON.stringify( snap.val(), null, 3 );
 		 var jsonValue = JSON.parse(valueJson);
 		 
-		 console.log(valueJson);
+		//  console.log(valueJson);
 		 var sensor = jsonValue.sensor;
 		 console.log(sensor);
 		 //databaseFirebase.innerText = sensor;
