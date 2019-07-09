@@ -30,10 +30,10 @@ window.onload = function() {
 		   var valueJson = JSON.stringify( snap.val(), null, 3 );
 		   var jsonValue = JSON.parse(valueJson);
 		   
-		   console.log(valueJson);
-		   var sensor = jsonValue.Data1;
+		//    console.log(valueJson);
+		   var sensor = jsonValue["Data1"];
 		   console.log(sensor);
-		   //databaseFirebase.innerText = sensor;
+		   databaseFirebase.innerText = sensor;
 		   if(sensor > 180) 
 		   {
 			   notification.innerText = "Danger";
